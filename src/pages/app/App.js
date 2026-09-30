@@ -1,4 +1,5 @@
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
         </nav>
 
         <div className="acoes">
-            <i className="./assets/images/magnifying-glass-solid-full.svg"></i>
-            <button className="">Entrar</button>
+            <i className="fa-solid fa-magnifying-glass"></i>
+            <a className='Entrar' href='/entrar'>entrar</a>
             <button className="cadastrar">Cadastrar</button>
         </div>
     </header>
@@ -220,7 +221,7 @@ function App() {
                 <span className="tempo">2 dias atrás</span>
             </div>
 
-            <a href="#">Ver todos os relatos →</a>
+            <a className="#">Ver todos os relatos →</a>
 
         </div>
 
