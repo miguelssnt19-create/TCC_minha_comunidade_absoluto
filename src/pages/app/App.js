@@ -27,7 +27,8 @@ function App() {
         <div className="acoes">
             <i className="fa-solid fa-magnifying-glass"></i>
             <a className='Entrar' href='/entrar'>entrar</a>
-            <button className="cadastrar">Cadastrar</button>
+            <a className='Cadastrar' href='/cadastrar'>cadastrar</a>
+            
         </div>
     </header>
 
