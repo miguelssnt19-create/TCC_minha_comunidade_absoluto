@@ -33,7 +33,7 @@ export default function Cadastro(){
 
         <p className="final ">
             Já possui uma conta?
-            <a className="entrar.html">Entrar</a>
+            <a href='/entrar'>Entrar</a>
         </p>
 
     </div>
