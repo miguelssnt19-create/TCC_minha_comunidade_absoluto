@@ -22,7 +22,7 @@ function App() {
             <a href="/sugestoes">Sugestões</a>
             <a href="/evento">Eventos</a>
             <a href="/mapa">Mapa</a>
-            <a href="/sobre">Sobre</a>
+            <a href="/">Sobre</a>
         </nav>
 
         <div className="acoes">
@@ -130,12 +130,13 @@ function App() {
                     grandes diferenças.
                 </p>
 
-                <Link to="/sobre">
-                    <button>
-                        Saiba mais
-                        <i className="fa-solid fa-arrow-right"></i>
-                    </button>
-                </Link>
+                
+
+                <a href="#sobre" className="botao-sobre">
+                Saiba mais
+    <i className="fa-solid fa-arrow-right"></i>
+                </a>
+
             </div>
 
         </div>

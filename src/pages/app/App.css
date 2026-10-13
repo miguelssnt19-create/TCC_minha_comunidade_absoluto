@@ -13,6 +13,7 @@
 }
 
 
+
 .Entrar{
     text-decoration:none;
     color:black;
@@ -31,9 +32,6 @@
     padding: 10px 20px;
 }
 
-/* =========================
-   MENU
-========================= */
 
 header {
     height: 82px;
@@ -52,8 +50,6 @@ header {
     z-index: 1000;
 }
 
-
-/* LOGO */
 
 .logo {
     display: flex;
@@ -78,7 +74,6 @@ header {
 }
 
 
-/* MENU */
 
 nav {
     display: flex;
@@ -98,8 +93,6 @@ nav .ativo {
     border-bottom: 2px solid #087f5b;
 }
 
-
-/* BOTÕES DO MENU */
 
 .acoes {
     display: flex;
@@ -131,10 +124,6 @@ nav .ativo {
     color: white;
 }
 
-
-/* =========================
-   HERO
-========================= */
 
 .hero {
     min-height: 405px;
@@ -213,10 +202,6 @@ nav .ativo {
 }
 
 
-/* =========================
-   SERVIÇOS
-========================= */
-
 .servicos {
     background: white;
 
@@ -281,10 +266,6 @@ nav .ativo {
 }
 
 
-/* =========================
-   CONTEÚDO
-========================= */
-
 .conteudo {
     display: grid;
     grid-template-columns: 1fr 1.1fr 1fr;
@@ -294,8 +275,6 @@ nav .ativo {
     padding: 30px 4%;
 }
 
-
-/* DESTAQUE */
 
 .destaque {
     min-height: 270px;
@@ -344,10 +323,6 @@ nav .ativo {
     cursor: pointer;
 }
 
-
-/* =========================
-   MAPA
-========================= */
 
 .mapa-box {
     background: white;
@@ -405,7 +380,6 @@ nav .ativo {
     z-index: 2;
 }
 
-/* MARCADORES */
 
 .marcador {
     position: absolute;
@@ -455,7 +429,7 @@ nav .ativo {
 }
 
 
-/* BOTÃO MAPA */
+
 
 .mapa-botao {
     margin-top: 12px;
@@ -472,10 +446,6 @@ nav .ativo {
     text-decoration: none;
 }
 
-
-/* =========================
-   RELATOS
-========================= */
 
 .relatos {
     background: #eaf7f1;
@@ -556,9 +526,6 @@ nav .ativo {
 }
 
 
-/* =========================
-   SOBRE
-========================= */
 
 .sobre {
     background: white;
@@ -577,9 +544,6 @@ nav .ativo {
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
 
 footer {
     background: #073b3a;
@@ -611,9 +575,6 @@ footer {
 }
 
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
 
 @media (max-width: 1000px) {
 
@@ -692,5 +653,13 @@ footer {
     color: red;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+#sobre {
+    scroll-margin-top: 100px;
+}
 
 
