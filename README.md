@@ -1,0 +1,1 @@
+# TCC_minha_comunidade_absoluto
