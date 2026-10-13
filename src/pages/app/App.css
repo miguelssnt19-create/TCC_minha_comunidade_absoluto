@@ -386,8 +386,24 @@ nav .ativo {
         linear-gradient(-45deg, transparent 48%, #fff 49%, #fff 51%, transparent 52%);
 
     background-size: 100px 100px;
+
+    
 }
 
+    .mapa-box {
+    position: relative;
+}
+
+.mapa-fake {
+    position: relative;
+    z-index: 1;
+}
+
+.mapa-botao {
+    position: relative;
+    top: 10px;
+    z-index: 2;
+}
 
 /* MARCADORES */
 
@@ -453,6 +469,7 @@ nav .ativo {
     color: white;
 
     cursor: pointer;
+    text-decoration: none;
 }
 
 

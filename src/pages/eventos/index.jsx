@@ -17,19 +17,19 @@ return(
     </div>
    </div>
    <nav>
-    <a href="meu_bairo.html">
+    <a href="/">
      Início
     </a>
-    <a href="problemas.html">
+    <a href="/problemas">
      Problemas
     </a>
-    <a href="sugestoes.html">
+    <a href="/sugestoes">
      Sugestões
     </a>
-    <a href="eventos.html">
+    <a href="/evento">
      Eventos
     </a>
-    <a href="mapa.html">
+    <a href="/mapa">
      Mapa
     </a>
     <a href="meu_bairo.html#sobre">

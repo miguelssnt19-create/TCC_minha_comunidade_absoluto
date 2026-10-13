@@ -1,6 +1,7 @@
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -16,12 +17,12 @@ function App() {
         </div>
 
         <nav>
-            <a href="#inicio" class="ativo">Início</a>
-            <a href="#problemas">Problemas</a>
-            <a href="#sugestoes">Sugestões</a>
-            <a href="#eventos">Eventos</a>
-            <a href="#mapa">Mapa</a>
-            <a href="#sobre">Sobre</a>
+            <a href="/" class="ativo">Início</a>
+            <a href="/problemas">Problemas</a>
+            <a href="/sugestoes">Sugestões</a>
+            <a href="/evento">Eventos</a>
+            <a href="/mapa">Mapa</a>
+            <a href="/sobre">Sobre</a>
         </nav>
 
         <div className="acoes">
@@ -42,17 +43,22 @@ function App() {
 
             <h2>Juntos podemos melhorar nosso bairro</h2>
 
+                
 
             <div className="botoes">
-                <button className="botao-principal">
-                    <i className="fa-solid fa-bullhorn"></i>
-                    Reportar um problema
-                </button>
+                <Link to="/problemas">
+                    <button className="botao-principal">
+                        <i className="fa-solid fa-bullhorn"></i>
+                        Reportar um problema
+                    </button>
+                </Link>
 
-                <button className="botao-secundario">
-                    <i className="fa-regular fa-lightbulb"></i>
-                    Dar uma sugestão
-                </button>
+                <Link to="/sugestoes">
+                    <button className="botao-secundario">
+                        <i className="fa-regular fa-lightbulb"></i>
+                        Dar uma sugestão
+                    </button>
+                </Link>
             </div>
 
         </div>
@@ -124,10 +130,12 @@ function App() {
                     grandes diferenças.
                 </p>
 
-                <button>
-                    Saiba mais
-                    <i className="fa-solid fa-arrow-right"></i>
-                </button>
+                <Link to="/sobre">
+                    <button>
+                        Saiba mais
+                        <i className="fa-solid fa-arrow-right"></i>
+                    </button>
+                </Link>
             </div>
 
         </div>
@@ -136,6 +144,7 @@ function App() {
         
         <div className="mapa-box" id="mapa">
 
+                
             <div className="titulo-box">
                 <i className="fa-regular fa-map"></i>
                 <h2>Mapa da Comunidade</h2>
@@ -153,12 +162,13 @@ function App() {
 
             </div>
 
-            <button className="mapa-botao">
+            
+
+            <Link className="mapa-botao" to="/mapa">
                 <i className="fa-regular fa-map"></i>
                 Ver mapa completo
                 <i className="fa-solid fa-arrow-right"></i>
-            </button>
-
+            </Link>
         </div>
 
 
