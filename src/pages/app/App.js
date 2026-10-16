@@ -233,7 +233,7 @@ function App() {
                 <span className="tempo">2 dias atrás</span>
             </div>
 
-            <a className="#">Ver todos os relatos →</a>
+            <a href='/problemas'>Ver todos os relatos →</a>
 
         </div>
 
