@@ -22,7 +22,7 @@ function App() {
             <a href="/sugestoes">Sugestões</a>
             <a href="/evento">Eventos</a>
             <a href="/mapa">Mapa</a>
-            <a href="/">Sobre</a>
+            <a href="#sobre">Sobre</a>
         </nav>
 
         <div className="acoes">

@@ -662,4 +662,10 @@ html {
     scroll-margin-top: 100px;
 }
 
-
+.botao-sobre{
+    text-decoration: none;
+    color: white;
+    background-color: #08b875;
+    padding: 10px;
+    border-radius: 10px;
+}
