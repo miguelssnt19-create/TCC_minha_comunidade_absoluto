@@ -21,7 +21,7 @@ export default function Router() {
             <Route path='/mapa' element={<Mapa />} />
             <Route path='/problemas' element={<Problemas />} />
             <Route path='/sugestoes' element={<Sugestoes />} />
-            <Route path='/Maps' element={<Mapas />} />
+            
         </Routes>  
     </BrowserRouter>
     );

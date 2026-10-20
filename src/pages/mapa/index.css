@@ -1,3 +1,5 @@
+/* ================= MAPA DA COMUNIDADE ================= */
+
 .pag-map {
   min-height: 100vh;
   background: #f5f8f7;
@@ -151,39 +153,32 @@
   background: #2389d7;
 }
 
+/* MAPA REAL */
+
 .mapa-janela {
   position: relative;
+  width: 100%;
   height: 620px;
   overflow: hidden;
   border: 2px solid #d9e2dc;
   border-radius: 12px;
   background: #f4f3df;
-  cursor: grab;
-  touch-action: none;
-  user-select: none;
 }
 
-.mapa-janela.arrastando {
-  cursor: grabbing;
-}
-
-.mapa-svg {
+.mapa-real {
   width: 100%;
   height: 100%;
-  display: block;
+  z-index: 1;
 }
 
-.dica-arrastar {
-  position: absolute;
-  left: 14px;
-  bottom: 14px;
-  padding: 9px 12px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
-  color: #345;
-  font-size: 13px;
-  box-shadow: 0 2px 8px #0002;
-  pointer-events: none;
+.mapa-real .leaflet-control-attribution {
+  font-size: 10px;
+}
+
+.mapa-janela .leaflet-container {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 .aviso-mapa {
@@ -191,10 +186,27 @@
   font-size: 12px;
 }
 
-/* HEADER */
+/* BOTÃO DE VOLTAR */
+
+.acao-voltar {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 20px;
+  border-radius: 9px;
+  background: #087f5b;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.acao-voltar:hover {
+  background: #075f48;
+}
+
+/* CABEÇALHO */
 
 header {
-  height: 82px;
+  min-height: 82px;
   background: white;
   display: flex;
   align-items: center;
@@ -266,7 +278,7 @@ nav .ativo {
   color: white;
 }
 
-/* FOOTER */
+/* RODAPÉ */
 
 footer {
   background: #073b3a;
@@ -301,7 +313,7 @@ footer {
   color: red;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVIDADE */
 
 @media (max-width: 1000px) {
   nav {
@@ -310,6 +322,10 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .pagina-categoria {
+    margin-top: 30px;
+  }
+
   .painel-categoria {
     padding: 25px;
   }
@@ -333,7 +349,7 @@ footer {
 
 @media (max-width: 600px) {
   header {
-    height: 70px;
+    min-height: 70px;
   }
 
   .logo h2 {
