@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { divIcon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
@@ -14,6 +15,30 @@ function ConectarMapa({ mapaRef }) {
 
   return null;
 }
+
+const iconeProblema = divIcon({
+  className: "marcador-personalizado",
+  html: '<div class="pin-mapa pin-problema"><i class="fa-solid fa-triangle-exclamation"></i></div>',
+  iconSize: [36, 36],
+  iconAnchor: [18, 18],
+  popupAnchor: [0, -18]
+});
+
+const iconeSugestao = divIcon({
+  className: "marcador-personalizado",
+  html: '<div class="pin-mapa pin-sugestao"><i class="fa-solid fa-lightbulb"></i></div>',
+  iconSize: [36, 36],
+  iconAnchor: [18, 18],
+  popupAnchor: [0, -18]
+});
+
+const iconeEvento = divIcon({
+  className: "marcador-personalizado",
+  html: '<div class="pin-mapa pin-evento"><i class="fa-regular fa-calendar"></i></div>',
+  iconSize: [36, 36],
+  iconAnchor: [18, 18],
+  popupAnchor: [0, -18]
+});
 
 export default function Mapa() {
   const mapaRef = useRef(null);
@@ -184,29 +209,38 @@ export default function Mapa() {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
 
-                <Marker position={[-23.5505, -46.6333]}>
-                  <Popup>
-                    <strong>São Paulo</strong>
-                    <br />
-                    Mapa inicial do Minha Comunidade.
-                  </Popup>
-                </Marker>
+               <Marker
+  position={[-23.5895, -46.6340]}
+  icon={iconeProblema}
+>
+  <Popup>
+    <strong>Buraco na rua</strong>
+    <br />
+    Exemplo de problema relatado.
+  </Popup>
+</Marker>
 
-                <Marker position={[-23.5895, -46.6340]}>
-                  <Popup>
-                    <strong>Exemplo de problema</strong>
-                    <br />
-                    Este marcador é ilustrativo.
-                  </Popup>
-                </Marker>
+<Marker
+  position={[-23.5614, -46.6559]}
+  icon={iconeSugestao}
+>
+  <Popup>
+    <strong>Mais árvores no bairro</strong>
+    <br />
+    Exemplo de sugestão de melhoria.
+  </Popup>
+</Marker>
 
-                <Marker position={[-23.5614, -46.6559]}>
-                  <Popup>
-                    <strong>Exemplo de sugestão</strong>
-                    <br />
-                    Este marcador é ilustrativo.
-                  </Popup>
-                </Marker>
+<Marker
+  position={[-23.5505, -46.6333]}
+  icon={iconeEvento}
+>
+  <Popup>
+    <strong>Mutirão de limpeza</strong>
+    <br />
+    Exemplo de evento da comunidade.
+  </Popup>
+</Marker>
               </MapContainer>
             </div>
 

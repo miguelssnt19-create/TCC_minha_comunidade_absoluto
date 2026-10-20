@@ -32,7 +32,7 @@ return(
     <a href="/mapa">
      Mapa
     </a>
-    <a href="meu_bairo.html#sobre">
+    <a href="/#sobre">
      Sobre
     </a>
    </nav>

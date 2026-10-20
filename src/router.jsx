@@ -6,7 +6,6 @@ import Evento from './pages/eventos/index.jsx';
 import Mapa from './pages/mapa/index.jsx';
 import Problemas from './pages/problemas/index.jsx';
 import Sugestoes from './pages/sugestoes/index.jsx';
-import Mapas from './components/maps/mapa.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 

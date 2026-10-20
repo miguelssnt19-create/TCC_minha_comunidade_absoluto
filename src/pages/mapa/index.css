@@ -368,3 +368,35 @@ footer {
     margin: 10px 0 0;
   }
 }
+
+
+
+.marcador-personalizado {
+  background: transparent;
+  border: none;
+}
+
+.pin-mapa {
+  width: 36px;
+  height: 36px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.pin-problema {
+  background-color: #e84b4b;
+}
+
+.pin-sugestao {
+  background-color: #16a36a;
+}
+
+.pin-evento {
+  background-color: #2389d7;
+}
